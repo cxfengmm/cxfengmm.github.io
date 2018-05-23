@@ -242,7 +242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/23/git和github/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/23/vue/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cxfengmm">
@@ -261,7 +261,126 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/23/git和github/" itemprop="url">未命名</a></h1>
+                <a class="post-title-link" href="/2018/05/23/vue/" itemprop="url">vue</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-23T15:17:12+08:00">
+                2018-05-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="vue-cli安装步骤"><a href="#vue-cli安装步骤" class="headerlink" title="vue-cli安装步骤"></a>vue-cli安装步骤</h2>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/23/git and github/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cxfengmm">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陈小胖的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/23/git and github/" itemprop="url">git和github</a></h1>
         
 
         <div class="post-meta">
@@ -313,7 +432,13 @@
       
         
           
-            
+            <blockquote>
+<h1 id="git和github"><a href="#git和github" class="headerlink" title="git和github"></a>git和github</h1></blockquote>
+<h4 id="git和github是两个东西"><a href="#git和github是两个东西" class="headerlink" title="git和github是两个东西"></a>git和github是两个东西</h4><blockquote>
+<p>git是版本控制工具 </p>
+<p>github是网站 ：社交平台、开源项目、远程仓库 </p>
+</blockquote>
+
           
         
       
@@ -431,8 +556,7 @@
 
       
         
-          
-            <blockquote>
+          <blockquote>
 <h1 id="使用Hexo搭建博客的步骤："><a href="#使用Hexo搭建博客的步骤：" class="headerlink" title="使用Hexo搭建博客的步骤："></a>使用Hexo搭建博客的步骤：</h1></blockquote>
 <h4 id="创建基于hexo的项目"><a href="#创建基于hexo的项目" class="headerlink" title="创建基于hexo的项目"></a>创建基于hexo的项目</h4><ol>
 <li>npm install hexo-cli -g       安装</li>
@@ -446,26 +570,13 @@
 <li>启用主题：打开站点配置文件_config.yml，找到theme字段，并将其值改为next</li>
 <li>验证主题是否正确启用，先用hexo.clean来清缓存，再用 hexo s –debug 启动</li>
 </ol>
-<h3 id="主题设定：选择scheme"><a href="#主题设定：选择scheme" class="headerlink" title="主题设定：选择scheme"></a>主题设定：选择scheme</h3><ol start="9">
-<li>在主题配置文件 _config.yml 中找到 scheme 字段并设置（Muse，Mist，Pisces），用哪个主题就把scheme前的#去掉</li>
-</ol>
-<h4 id="设置语言："><a href="#设置语言：" class="headerlink" title="设置语言："></a>设置语言：</h4><ol start="10">
-<li>打开站点的配置文件 _config.yml 找到 language 字段，设置成 zh-Hans（简体中文）</li>
-</ol>
-<h4 id="设置菜单："><a href="#设置菜单：" class="headerlink" title="设置菜单："></a>设置菜单：</h4><ol start="11">
-<li>编辑主题配置文件 _config.yml 找到 menu 字段，需要哪个把哪个前面的#去掉</li>
-</ol>
-<h4 id="部署到github："><a href="#部署到github：" class="headerlink" title="部署到github："></a>部署到github：</h4><ol start="12">
-<li><p>npm install hexo-deployer-git –save  </p>
-</li>
-<li><p>打开站点的配置文件 _config.yml 找到 deploy 字段，修改</p>
-<p>deploy:<br>  type: git<br>  repo: <a href="https://github.com/cxfengmm/cxfengmm.github.io" target="_blank" rel="noopener">https://github.com/cxfengmm/cxfengmm.github.io</a><br>  branch: master</p>
-</li>
-<li><p>部署 hexo g -d</p>
-</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/23/steps/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -549,7 +660,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
