@@ -81,13 +81,13 @@
 
 <meta name="description" content="fighting">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="cxfengmm">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="cxfengmm">
 <meta property="og:description" content="fighting">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="cxfengmm">
 <meta name="twitter:description" content="fighting">
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <title>Hexo</title>
+  <title>cxfengmm</title>
   
 
 
@@ -155,7 +155,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">cxfengmm</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -251,7 +251,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="cxfengmm">
     </span>
 
     
@@ -315,9 +315,33 @@
           
             <blockquote>
 <h1 id="使用Hexo搭建博客的步骤："><a href="#使用Hexo搭建博客的步骤：" class="headerlink" title="使用Hexo搭建博客的步骤："></a>使用Hexo搭建博客的步骤：</h1></blockquote>
-<ol>
+<h4 id="创建基于hexo的项目"><a href="#创建基于hexo的项目" class="headerlink" title="创建基于hexo的项目"></a>创建基于hexo的项目</h4><ol>
 <li>npm install hexo-cli -g       安装</li>
-<li>hexo init blog    </li>
+<li>hexo init blog（项目名称）       初始化项目</li>
+<li>cd blog       进入项目</li>
+<li>npm install       下载模块</li>
+<li>hexo server </li>
+</ol>
+<h3 id="配置主题：NexT主题安装步骤"><a href="#配置主题：NexT主题安装步骤" class="headerlink" title="配置主题：NexT主题安装步骤"></a>配置主题：NexT主题安装步骤</h3><ol start="6">
+<li>在blog项目中 git clone <a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">https://github.com/iissnan/hexo-theme-next</a> themes/next </li>
+<li>启用主题：打开站点配置文件_config.yml，找到theme字段，并将其值改为next</li>
+<li>验证主题是否正确启用，先用hexo.clean来清缓存，再用 hexo s –debug 启动</li>
+</ol>
+<h3 id="主题设定：选择scheme"><a href="#主题设定：选择scheme" class="headerlink" title="主题设定：选择scheme"></a>主题设定：选择scheme</h3><ol start="9">
+<li>在主题配置文件 _config.yml 中找到 scheme 字段并设置（Muse，Mist，Pisces），用哪个主题就把scheme前的#去掉</li>
+</ol>
+<h4 id="设置语言："><a href="#设置语言：" class="headerlink" title="设置语言："></a>设置语言：</h4><ol start="10">
+<li>打开站点的配置文件 _config.yml 找到 language 字段，设置成 zh-Hans（简体中文）</li>
+</ol>
+<h4 id="设置菜单："><a href="#设置菜单：" class="headerlink" title="设置菜单："></a>设置菜单：</h4><ol start="11">
+<li>编辑主题配置文件 _config.yml 找到 menu 字段，需要哪个把哪个前面的#去掉</li>
+</ol>
+<h4 id="部署到github："><a href="#部署到github：" class="headerlink" title="部署到github："></a>部署到github：</h4><ol start="12">
+<li><p>npm install hexo-deployer-git –save  </p>
+</li>
+<li><p>打开站点的配置文件 _config.yml 找到 deploy 字段，修改</p>
+<p>deploy:<br>  type: git<br>  repo: <a href="https://github.com/cxfengmm/cxfengmm.github.io" target="_blank" rel="noopener">https://github.com/cxfengmm/cxfengmm.github.io</a><br>  branch: master</p>
+</li>
 </ol>
 
           
