@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="陈小胖的博客">
 <meta property="og:description" content="vue  vue-cli 安装步骤 全局安装vue-cli：npm install –global vue-cli 创建一个基于webpack模板的新项目：vue init webpack my-project 进入项目：cd my-project 安装依赖：npm install 运行：npm run dev 打包：npm run build       生成dist文件夹  主要文件作用 i">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-24T08:24:15.254Z">
+<meta property="og:updated_time" content="2018-05-29T02:42:04.978Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue">
 <meta name="twitter:description" content="vue  vue-cli 安装步骤 全局安装vue-cli：npm install –global vue-cli 创建一个基于webpack模板的新项目：vue init webpack my-project 进入项目：cd my-project 安装依赖：npm install 运行：npm run dev 打包：npm run build       生成dist文件夹  主要文件作用 i">
@@ -329,6 +329,21 @@
 <li>所有得静态资源全部放在<strong>static</strong>文件夹下</li>
 </ol>
 <a id="more"></a>
+<blockquote>
+<h2 id="vue-router"><a href="#vue-router" class="headerlink" title="vue-router"></a>vue-router</h2></blockquote>
+<ol>
+<li><p><code>&lt;router-link :to=&quot;{name:home,path:&#39;/home&#39;,params:{p:1},query:{q:2}}&quot;&gt;</code></p>
+<p><strong>参数：</strong>name是跳转到的路由的名称，path是跳转到的路由的路径，params和query是传递的参数；</p>
+</li>
+<li><p>router-link 默认渲染成一个 a 标签，可以通过 <strong>tag </strong>属性指定标签；</p>
+</li>
+<li><p>路由组件想在哪渲染就在哪写 router-view 标签；可以在 router-view 标签外面包一个 keep-alive 标签，这样就把渲染过的组件缓存起来了；</p>
+</li>
+<li><p>可以使用 watch 来监测路由变化，只要路由变化了就会调用；</p>
+</li>
+<li><p>可以在任何组件内通过 <strong>this.$router</strong> 访问路由器，也可以通过 <strong>this.$route</strong> 访问当前路由；</p>
+</li>
+</ol>
 
       
     </div>
@@ -479,7 +494,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vue"><span class="nav-number">1.</span> <span class="nav-text">vue</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-cli"><span class="nav-number">1.1.</span> <span class="nav-text">vue-cli</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装步骤"><span class="nav-number">1.1.1.</span> <span class="nav-text">安装步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要文件作用"><span class="nav-number">1.1.2.</span> <span class="nav-text">主要文件作用</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#vue"><span class="nav-number">1.</span> <span class="nav-text">vue</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-cli"><span class="nav-number">1.1.</span> <span class="nav-text">vue-cli</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装步骤"><span class="nav-number">1.1.1.</span> <span class="nav-text">安装步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要文件作用"><span class="nav-number">1.1.2.</span> <span class="nav-text">主要文件作用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-router"><span class="nav-number">1.2.</span> <span class="nav-text">vue-router</span></a></li></ol></li></ol></div>
             
 
           </div>
