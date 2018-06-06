@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="陈小胖的博客">
 <meta property="og:description" content="前端页面由哪三层组成：结构层：HTML，表现层：CSS，行为层：JavaScript； 如何利用边框写出三角形： 将div的宽高都设为0       需要哪个方向是三角形就把哪个方向的边框颜色改变即可       把其他方向的边框颜色变成transparent       去掉对边边框即可完成  div{width: 0px;  height: 0px; border: 200px solid t">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-05T07:07:04.773Z">
+<meta property="og:updated_time" content="2018-06-06T02:37:37.056Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试题">
 <meta name="twitter:description" content="前端页面由哪三层组成：结构层：HTML，表现层：CSS，行为层：JavaScript； 如何利用边框写出三角形： 将div的宽高都设为0       需要哪个方向是三角形就把哪个方向的边框颜色改变即可       把其他方向的边框颜色变成transparent       去掉对边边框即可完成  div{width: 0px;  height: 0px; border: 200px solid t">
@@ -367,8 +367,18 @@
 <h4 id="padding不能取负值"><a href="#padding不能取负值" class="headerlink" title="padding不能取负值"></a>padding不能取负值</h4><h4 id="样式重置表："><a href="#样式重置表：" class="headerlink" title="样式重置表："></a>样式重置表：</h4><ol>
 <li>body{background:#fff;}</li>
 <li>body,p,h1~h6{margin:0;}</li>
-<li>ul,ol{margin:0;padding:0;}</li>
+<li>ul,ol{margin:0;padding:0;list-style:none;}</li>
+<li>strong,b,h1~h6{font-weight:normal;}</li>
+<li>em,i{font-style:normal;}</li>
+<li>a{color:#000;text-decoration:none;}</li>
+<li>img{border:0;vertical-align:top;}</li>
+<li>table{margin:0;padding:0;}</li>
+<li>input,select,option,textarea,fieldset{margin:0;padding:0;background:none;border:0;outline:none;vertical-align:top;}</li>
 </ol>
+<h4 id="strong和b标签有啥区别，em和i标签有啥区别："><a href="#strong和b标签有啥区别，em和i标签有啥区别：" class="headerlink" title="strong和b标签有啥区别，em和i标签有啥区别："></a>strong和b标签有啥区别，em和i标签有啥区别：</h4><p>strong和b标签都可以加粗，都默认有加粗样式</p>
+<p>strong是结构化标签，不仅可以加粗，还具有语义化表示强调，b是表现化标签，不能表示强调</p>
+<p>em和i标签都默认有倾斜样式</p>
+<p>em是结构化标签，不仅可以倾斜，还具有语义化表示强调，i是表现化标签，不能表示强调</p>
 
       
     </div>
@@ -519,7 +529,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前端页面由哪三层组成："><span class="nav-number">1.</span> <span class="nav-text">前端页面由哪三层组成：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何利用边框写出三角形："><span class="nav-number">2.</span> <span class="nav-text">如何利用边框写出三角形：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自动显示省略号："><span class="nav-number">3.</span> <span class="nav-text">自动显示省略号：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS引入方法有哪些："><span class="nav-number">4.</span> <span class="nav-text">CSS引入方法有哪些：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#link和-import的区别："><span class="nav-number">5.</span> <span class="nav-text">link和@import的区别：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#前端开发："><span class="nav-number">6.</span> <span class="nav-text">前端开发：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#margin-top给父元素的第一个子元素写会出现什么问题，如何解决："><span class="nav-number">7.</span> <span class="nav-text">margin-top给父元素的第一个子元素写会出现什么问题，如何解决：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#padding不能取负值"><span class="nav-number">8.</span> <span class="nav-text">padding不能取负值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#样式重置表："><span class="nav-number">9.</span> <span class="nav-text">样式重置表：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前端页面由哪三层组成："><span class="nav-number">1.</span> <span class="nav-text">前端页面由哪三层组成：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何利用边框写出三角形："><span class="nav-number">2.</span> <span class="nav-text">如何利用边框写出三角形：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自动显示省略号："><span class="nav-number">3.</span> <span class="nav-text">自动显示省略号：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS引入方法有哪些："><span class="nav-number">4.</span> <span class="nav-text">CSS引入方法有哪些：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#link和-import的区别："><span class="nav-number">5.</span> <span class="nav-text">link和@import的区别：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#前端开发："><span class="nav-number">6.</span> <span class="nav-text">前端开发：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#margin-top给父元素的第一个子元素写会出现什么问题，如何解决："><span class="nav-number">7.</span> <span class="nav-text">margin-top给父元素的第一个子元素写会出现什么问题，如何解决：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#padding不能取负值"><span class="nav-number">8.</span> <span class="nav-text">padding不能取负值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#样式重置表："><span class="nav-number">9.</span> <span class="nav-text">样式重置表：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#strong和b标签有啥区别，em和i标签有啥区别："><span class="nav-number">10.</span> <span class="nav-text">strong和b标签有啥区别，em和i标签有啥区别：</span></a></li></ol></div>
             
 
           </div>
