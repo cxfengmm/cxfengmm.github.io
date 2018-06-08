@@ -313,7 +313,14 @@
       
         
           
-            
+            <h3 id="主要文件作用："><a href="#主要文件作用：" class="headerlink" title="主要文件作用："></a>主要文件作用：</h3><ol>
+<li>app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置<ol>
+<li>pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改</li>
+<li>window：用于设置小程序的状态栏、导航条、标题、窗口背景色。<strong>注意：</strong>backgroundColor 是下拉窗口的背景色不是整个页面的背景色，整个页面背景色可以在app.wxss里面设置page{background:’#fff’}</li>
+</ol>
+</li>
+</ol>
+
           
         
       

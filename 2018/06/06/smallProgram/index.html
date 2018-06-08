@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="fighting">
+<meta name="description" content="主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序的状态栏、导航条、标">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信小程序">
 <meta property="og:url" content="http://yoursite.com/2018/06/06/smallProgram/index.html">
 <meta property="og:site_name" content="陈小胖的博客">
-<meta property="og:description" content="fighting">
+<meta property="og:description" content="主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序的状态栏、导航条、标">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-08T02:27:49.967Z">
+<meta property="og:updated_time" content="2018-06-08T02:56:11.898Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序">
-<meta name="twitter:description" content="fighting">
+<meta name="twitter:description" content="主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序的状态栏、导航条、标">
 
 
 
@@ -309,7 +309,14 @@
       
 
       
-        
+        <h3 id="主要文件作用："><a href="#主要文件作用：" class="headerlink" title="主要文件作用："></a>主要文件作用：</h3><ol>
+<li>app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置<ol>
+<li>pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改</li>
+<li>window：用于设置小程序的状态栏、导航条、标题、窗口背景色。<strong>注意：</strong>backgroundColor 是下拉窗口的背景色不是整个页面的背景色，整个页面背景色可以在app.wxss里面设置page{background:’#fff’}</li>
+</ol>
+</li>
+</ol>
+
       
     </div>
     
@@ -393,8 +400,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -440,6 +456,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#主要文件作用："><span class="nav-number">1.</span> <span class="nav-text">主要文件作用：</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
