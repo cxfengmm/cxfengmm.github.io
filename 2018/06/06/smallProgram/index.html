@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序的状态栏、导航条、标">
+<meta name="description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微信小程序">
+<meta property="og:title" content="陈小胖的博客">
 <meta property="og:url" content="http://yoursite.com/2018/06/06/smallProgram/index.html">
 <meta property="og:site_name" content="陈小胖的博客">
-<meta property="og:description" content="主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序的状态栏、导航条、标">
+<meta property="og:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-08T02:56:11.898Z">
+<meta property="og:updated_time" content="2018-06-08T07:37:13.162Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="微信小程序">
-<meta name="twitter:description" content="主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序的状态栏、导航条、标">
+<meta name="twitter:title" content="陈小胖的博客">
+<meta name="twitter:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>微信小程序 | 陈小胖的博客</title>
+  <title> | 陈小胖的博客</title>
   
 
 
@@ -259,7 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">微信小程序</h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -309,12 +309,26 @@
       
 
       
-        <h3 id="主要文件作用："><a href="#主要文件作用：" class="headerlink" title="主要文件作用："></a>主要文件作用：</h3><ol>
+        <h3 id="小程序主体部分文件："><a href="#小程序主体部分文件：" class="headerlink" title="小程序主体部分文件："></a>小程序主体部分文件：</h3><h3 id="主要文件作用："><a href="#主要文件作用：" class="headerlink" title="主要文件作用："></a>主要文件作用：</h3><ol>
 <li>app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置<ol>
 <li>pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改</li>
 <li>window：用于设置小程序的状态栏、导航条、标题、窗口背景色。<strong>注意：</strong>backgroundColor 是下拉窗口的背景色不是整个页面的背景色，整个页面背景色可以在app.wxss里面设置page{background:’#fff’}</li>
+<li>tabBar：底部tab切换</li>
 </ol>
 </li>
+<li>app.js文件：小程序逻辑</li>
+<li>app.wxss：小程序公共样式表</li>
+</ol>
+<a id="more"></a>
+<h3 id="小程序页面文件："><a href="#小程序页面文件：" class="headerlink" title="小程序页面文件："></a>小程序页面文件：</h3><ol>
+<li>wxml文件：页面结构</li>
+<li>wxss：页面样式表</li>
+<li>js：页面逻辑</li>
+<li>json：页面配置（不是必须）</li>
+</ol>
+<p><strong>注意：</strong>四类文件必须相同名称</p>
+<h3 id="WXML："><a href="#WXML：" class="headerlink" title="WXML："></a>WXML：</h3><ol>
+<li>每个小程序页面的数据都是来自对应 js 文件的Page({})中的data，内容绑定和<strong>属性绑定</strong>都是双花括号，关键字也需要在双花括号之内，可以在双花括号内进行简单的运算（三元运算、算数运算、逻辑判断、字符串运算等）</li>
 </ol>
 
       
@@ -466,7 +480,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#主要文件作用："><span class="nav-number">1.</span> <span class="nav-text">主要文件作用：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序主体部分文件："><span class="nav-number">1.</span> <span class="nav-text">小程序主体部分文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要文件作用："><span class="nav-number">2.</span> <span class="nav-text">主要文件作用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序页面文件："><span class="nav-number">3.</span> <span class="nav-text">小程序页面文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WXML："><span class="nav-number">4.</span> <span class="nav-text">WXML：</span></a></li></ol></div>
             
 
           </div>
