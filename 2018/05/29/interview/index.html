@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="陈小胖的博客">
 <meta property="og:description" content="前端页面由哪三层组成：结构层：HTML，表现层：CSS，行为层：JavaScript； 如何利用边框写出三角形： 将div的宽高都设为0       需要哪个方向是三角形就把哪个方向的边框颜色改变即可       把其他方向的边框颜色变成transparent       去掉对边边框即可完成  div{width: 0px;  height: 0px; border: 200px solid t">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-06T02:48:33.618Z">
+<meta property="og:updated_time" content="2018-06-08T02:14:15.194Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试题">
 <meta name="twitter:description" content="前端页面由哪三层组成：结构层：HTML，表现层：CSS，行为层：JavaScript； 如何利用边框写出三角形： 将div的宽高都设为0       需要哪个方向是三角形就把哪个方向的边框颜色改变即可       把其他方向的边框颜色变成transparent       去掉对边边框即可完成  div{width: 0px;  height: 0px; border: 200px solid t">
@@ -394,6 +394,30 @@
 <li>对于padding是支持左右的，对于上下的padding位置不能正常显示</li>
 <li>代码换行会被解析成一个空格</li>
 </ol>
+<p>块标签：</p>
+<ol>
+<li>宽默认占满一行</li>
+<li>默认文档流是上下排列</li>
+<li>支持所有的css样式</li>
+</ol>
+<p>转换：display:inline;   ——将块元素转成内联元素</p>
+<p>​       display:block;    ——将内联元素转成块元素</p>
+<h4 id="CSS选择符有哪些？优先级排列，-important和内联元素哪个优先级高？"><a href="#CSS选择符有哪些？优先级排列，-important和内联元素哪个优先级高？" class="headerlink" title="CSS选择符有哪些？优先级排列，!important和内联元素哪个优先级高？"></a>CSS选择符有哪些？优先级排列，!important和内联元素哪个优先级高？</h4><ol>
+<li>选择符：标签选择符（p），类选择符（class），id选择符（#），包含选择符（div p），父子选择符（div&gt;p），内联选择符（a），群组选择符，通配符，伪类选择符</li>
+<li>优先级：内联选择符1000&gt;id选择符0100&gt;类选择符0010&gt;标签选择符0001；包含选择符权重是所有选择符之和，群组选择符是他们各自本身，伪类选择符是0010加上前面选择符的权重</li>
+<li>!important优先级高于内联元素的优先级</li>
+</ol>
+<h4 id="哪些属性可以继承："><a href="#哪些属性可以继承：" class="headerlink" title="哪些属性可以继承："></a>哪些属性可以继承：</h4><p>文本属性和列表属性可以继承</p>
+<h4 id="五大浏览器内核及其代表："><a href="#五大浏览器内核及其代表：" class="headerlink" title="五大浏览器内核及其代表："></a>五大浏览器内核及其代表：</h4><ol>
+<li>Trident：ie,360浏览器</li>
+<li>Gecko：火狐浏览器</li>
+<li>Webkit：Safari浏览器</li>
+<li>Presto：Opera浏览器</li>
+<li>Blink</li>
+</ol>
+<h4 id="img标签的title和alt属性区别是什么："><a href="#img标签的title和alt属性区别是什么：" class="headerlink" title="img标签的title和alt属性区别是什么："></a>img标签的title和alt属性区别是什么：</h4><p>title：鼠标悬停在上面显示的提示信息</p>
+<p>alt：当图片无法正常加载时出现在图片区域的替代文本</p>
+<h4 id="浮动过后对元素的影响："><a href="#浮动过后对元素的影响：" class="headerlink" title="浮动过后对元素的影响："></a>浮动过后对元素的影响：</h4><p>浮动过后的元素既有块元素的特点又有内联元素的特点。</p>
 
       
     </div>
@@ -427,6 +451,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/06/smallProgram/" rel="prev" title="微信小程序">
+                微信小程序 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -507,7 +535,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -544,7 +572,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前端页面由哪三层组成："><span class="nav-number">1.</span> <span class="nav-text">前端页面由哪三层组成：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何利用边框写出三角形："><span class="nav-number">2.</span> <span class="nav-text">如何利用边框写出三角形：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自动显示省略号："><span class="nav-number">3.</span> <span class="nav-text">自动显示省略号：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS引入方法有哪些："><span class="nav-number">4.</span> <span class="nav-text">CSS引入方法有哪些：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#link和-import的区别："><span class="nav-number">5.</span> <span class="nav-text">link和@import的区别：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#前端开发："><span class="nav-number">6.</span> <span class="nav-text">前端开发：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#margin-top给父元素的第一个子元素写会出现什么问题，如何解决："><span class="nav-number">7.</span> <span class="nav-text">margin-top给父元素的第一个子元素写会出现什么问题，如何解决：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#padding不能取负值"><span class="nav-number">8.</span> <span class="nav-text">padding不能取负值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#样式重置表："><span class="nav-number">9.</span> <span class="nav-text">样式重置表：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#strong和b标签有啥区别，em和i标签有啥区别："><span class="nav-number">10.</span> <span class="nav-text">strong和b标签有啥区别，em和i标签有啥区别：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#行内元素有哪些？块级元素有哪些？空元素有哪些？"><span class="nav-number">11.</span> <span class="nav-text">行内元素有哪些？块级元素有哪些？空元素有哪些？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS盒模型："><span class="nav-number">12.</span> <span class="nav-text">CSS盒模型：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内联元素与块级元素有啥区别，如何转换："><span class="nav-number">13.</span> <span class="nav-text">内联元素与块级元素有啥区别，如何转换：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前端页面由哪三层组成："><span class="nav-number">1.</span> <span class="nav-text">前端页面由哪三层组成：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#如何利用边框写出三角形："><span class="nav-number">2.</span> <span class="nav-text">如何利用边框写出三角形：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自动显示省略号："><span class="nav-number">3.</span> <span class="nav-text">自动显示省略号：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS引入方法有哪些："><span class="nav-number">4.</span> <span class="nav-text">CSS引入方法有哪些：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#link和-import的区别："><span class="nav-number">5.</span> <span class="nav-text">link和@import的区别：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#前端开发："><span class="nav-number">6.</span> <span class="nav-text">前端开发：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#margin-top给父元素的第一个子元素写会出现什么问题，如何解决："><span class="nav-number">7.</span> <span class="nav-text">margin-top给父元素的第一个子元素写会出现什么问题，如何解决：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#padding不能取负值"><span class="nav-number">8.</span> <span class="nav-text">padding不能取负值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#样式重置表："><span class="nav-number">9.</span> <span class="nav-text">样式重置表：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#strong和b标签有啥区别，em和i标签有啥区别："><span class="nav-number">10.</span> <span class="nav-text">strong和b标签有啥区别，em和i标签有啥区别：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#行内元素有哪些？块级元素有哪些？空元素有哪些？"><span class="nav-number">11.</span> <span class="nav-text">行内元素有哪些？块级元素有哪些？空元素有哪些？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS盒模型："><span class="nav-number">12.</span> <span class="nav-text">CSS盒模型：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#内联元素与块级元素有啥区别，如何转换："><span class="nav-number">13.</span> <span class="nav-text">内联元素与块级元素有啥区别，如何转换：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS选择符有哪些？优先级排列，-important和内联元素哪个优先级高？"><span class="nav-number">14.</span> <span class="nav-text">CSS选择符有哪些？优先级排列，!important和内联元素哪个优先级高？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#哪些属性可以继承："><span class="nav-number">15.</span> <span class="nav-text">哪些属性可以继承：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#五大浏览器内核及其代表："><span class="nav-number">16.</span> <span class="nav-text">五大浏览器内核及其代表：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#img标签的title和alt属性区别是什么："><span class="nav-number">17.</span> <span class="nav-text">img标签的title和alt属性区别是什么：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#浮动过后对元素的影响："><span class="nav-number">18.</span> <span class="nav-text">浮动过后对元素的影响：</span></a></li></ol></div>
             
 
           </div>
