@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序">
+<meta name="description" content="fighting">
 <meta property="og:type" content="article">
-<meta property="og:title" content="微信小程序">
-<meta property="og:url" content="http://yoursite.com/2018/06/06/smallProgram/index.html">
+<meta property="og:title" content="面向对象">
+<meta property="og:url" content="http://yoursite.com/2018/06/26/面向对象/index.html">
 <meta property="og:site_name" content="陈小胖的博客">
-<meta property="og:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序">
+<meta property="og:description" content="fighting">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-13T07:39:43.588Z">
+<meta property="og:updated_time" content="2018-06-26T01:37:41.409Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="微信小程序">
-<meta name="twitter:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置 pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程序">
+<meta name="twitter:title" content="面向对象">
+<meta name="twitter:description" content="fighting">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/06/06/smallProgram/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/26/面向对象/"/>
 
 
 
 
 
-  <title>微信小程序 | 陈小胖的博客</title>
+  <title>面向对象 | 陈小胖的博客</title>
   
 
 
@@ -242,7 +242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/06/smallProgram/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/26/面向对象/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="cxfengmm">
@@ -259,7 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">微信小程序</h1>
+          <h1 class="post-title" itemprop="name headline">面向对象</h1>
         
 
         <div class="post-meta">
@@ -271,8 +271,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-06T12:59:43+08:00">
-                2018-06-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-26T09:36:26+08:00">
+                2018-06-26
               </time>
             
 
@@ -309,41 +309,7 @@
       
 
       
-        <h3 id="小程序主体部分文件："><a href="#小程序主体部分文件：" class="headerlink" title="小程序主体部分文件："></a>小程序主体部分文件：</h3><h3 id="主要文件作用："><a href="#主要文件作用：" class="headerlink" title="主要文件作用："></a>主要文件作用：</h3><ol>
-<li>app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置<ol>
-<li>pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改</li>
-<li>window：用于设置小程序的状态栏、导航条、标题、窗口背景色。<strong>注意：</strong>backgroundColor 是下拉窗口的背景色不是整个页面的背景色，整个页面背景色可以在app.wxss里面设置page{background:’#fff’}</li>
-<li>tabBar：底部tab切换。<strong>注意：</strong>小程序只有首页才有tabBar，跳转到其他页面就没有了</li>
-</ol>
-</li>
-<li>app.js文件：小程序逻辑</li>
-<li>app.wxss：小程序公共样式表</li>
-</ol>
-<a id="more"></a>
-<h3 id="小程序页面文件："><a href="#小程序页面文件：" class="headerlink" title="小程序页面文件："></a>小程序页面文件：</h3><ol>
-<li>wxml文件：页面结构</li>
-<li>wxss：页面样式表</li>
-<li>js：页面逻辑</li>
-<li>json：页面配置（不是必须）</li>
-</ol>
-<p><strong>注意：</strong>四类文件必须相同名称</p>
-<h3 id="WXML："><a href="#WXML：" class="headerlink" title="WXML："></a>WXML：</h3><ol>
-<li>每个小程序页面的数据都是来自对应 js 文件的Page({})中的data，内容绑定和<strong>属性绑定</strong>都是双花括号，关键字也需要在双花括号之内，可以在双花括号内进行简单的运算（三元运算、算数运算、逻辑判断、字符串运算等）</li>
-</ol>
-<h3 id="自定义组件："><a href="#自定义组件：" class="headerlink" title="自定义组件："></a>自定义组件：</h3><ol>
-<li>创建一个components文件夹，里面专门存放组件</li>
-<li>在components文件夹中新建一个目录，跟pages里面的目录一样，有wxml，wxss，js和json文件</li>
-<li>在组件的json文件中写入{“component”:true}</li>
-<li>使用组件：在使用组件的页面的json文件中写入{“usingComponents”:{“navbar”:”../../components/navBar/navBar”}}</li>
-<li>在使用组件的页面的wxml文件中写入组件名称的标签对即可</li>
-</ol>
-<h3 id="自定义组件传数据："><a href="#自定义组件传数据：" class="headerlink" title="自定义组件传数据："></a>自定义组件传数据：</h3><ol>
-<li><p>要在自定义组件的js文件的对外属性（properties ）列表中指明传递过来的数据的类型</p>
-</li>
-<li><p>在引用组件的wxml页面中通过组件文件中的数据名称等于应用组件传递的数剧</p>
-</li>
-</ol>
-
+        
       
     </div>
     
@@ -367,8 +333,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/29/interview/" rel="next" title="面试题">
-                <i class="fa fa-chevron-left"></i> 面试题
+              <a href="/2018/06/06/微信小程序/" rel="next" title="微信小程序">
+                <i class="fa fa-chevron-left"></i> 微信小程序
               </a>
             
           </div>
@@ -427,17 +393,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -456,7 +413,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -483,22 +440,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序主体部分文件："><span class="nav-number">1.</span> <span class="nav-text">小程序主体部分文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要文件作用："><span class="nav-number">2.</span> <span class="nav-text">主要文件作用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序页面文件："><span class="nav-number">3.</span> <span class="nav-text">小程序页面文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WXML："><span class="nav-number">4.</span> <span class="nav-text">WXML：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件："><span class="nav-number">5.</span> <span class="nav-text">自定义组件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件传数据："><span class="nav-number">6.</span> <span class="nav-text">自定义组件传数据：</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
