@@ -319,8 +319,7 @@
 <li>cd 项目名称</li>
 <li>npm start</li>
 </ol>
-<p>###主要文件作用：</p>
-<ol>
+<h3 id="主要文件作用："><a href="#主要文件作用：" class="headerlink" title="主要文件作用："></a>主要文件作用：</h3><ol>
 <li>index.js：存放的是这个项目的核心内容，也就是我们的主要工作区域，其中，index.js文件是和index.html文件进行关联的唯一接口：ReactDOM.render()的作用是将app的内容渲染到根root中去</li>
 </ol>
 
@@ -441,8 +440,7 @@
 
       
         
-          
-            <h3 id="Promise："><a href="#Promise：" class="headerlink" title="Promise："></a>Promise：</h3><ol>
+          <h3 id="Promise："><a href="#Promise：" class="headerlink" title="Promise："></a>Promise：</h3><ol>
 <li><p>Promise出现之前，处理异步网络请求是这样的：</p>
 <p>请求1(function(请求结果1)){请求2(function(请求结果2){ 处理请求结果2 })}，如果有很多个异步请求，就会出现<strong>回调地狱</strong>的痛点。</p>
 </li>
@@ -461,17 +459,13 @@
 <p>​    .then(请求2(请求结果1))</p>
 <p>​    .then(请求3(请求结果2))</p>
 <p>​    .catch(处理异常(异常信息))</p>
-</li>
-<li><p><strong>同步与异步的区别：</strong>简单来说，可以改变程序正常执行顺序的操作就可以看成是异步操作，不用等所有操作都做完就可以响应用户请求，用户体验较好，而同步就是要等所有操作都做完，才能返回给用户结果，用户体验不好，就好比让保姆去超市买菜做饭再送饭然后送完饭之后打电话给我，那么打电话给我就是同步操作，其他的都是异步操作</p>
-</li>
-<li><p><strong>Promise的使用总结：</strong></p>
-<ol>
-<li>初始化一个Promise对象，可以通过两种方式创建，这两种方式都会返回一个Promise对象</li>
-</ol>
-</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/27/es6/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -588,8 +582,7 @@
 
       
         
-          
-            <p><strong>定义：</strong>面向对象是一种编程思想，就是把一些具有相同特征的归为一类，并且返回一个对象，这个对象的特性是挂在构造函数的原型上面的。</p>
+          <p><strong>定义：</strong>面向对象是一种编程思想，就是把一些具有相同特征的归为一类，并且返回一个对象，这个对象的特性是挂在构造函数的原型上面的。</p>
 <p><strong>特征：</strong></p>
 <ol>
 <li>抽象：抽出像的部分</li>
@@ -604,26 +597,13 @@
 <li>前面无主的叫函数 function fn(){}，前面有主的叫方法 array.push</li>
 <li>只有对象（包含内置对象）下面才有属性和方法，简单类型没有</li>
 </ol>
-<p><strong>new：</strong></p>
-<ol>
-<li>new是一个运算符，专门用来运算函数</li>
-<li>使用了new之后：<ol>
-<li>如果不写括号，不传参就等同于函数的调用</li>
-<li>默认返回值不是undefined，而是obj，如果写了return并且return出来的是对象类型，那么返回值就为return出来的那个对象，如果没写return，返回值就是new出来的那个对象</li>
-<li>构造函数中的this指向new出来的那个对象</li>
-<li>内置对象的方法是不能new的，只能new自己写的方法</li>
-</ol>
-</li>
-</ol>
-<p><strong>原型（prototype）：</strong></p>
-<ol>
-<li>改写对象下面的属性和方法，让共用的属性或者方法在内存中只存一份（目的是为了解决实例化对象使用方法时性能的问题，提高性能）</li>
-<li>每个函数都自带一个属性或者方法，其中有一个属性：prototype</li>
-<li>prototype的值是一个对象</li>
-<li>prototype只能给该构造函数的实例化</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/26/面向对象/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>

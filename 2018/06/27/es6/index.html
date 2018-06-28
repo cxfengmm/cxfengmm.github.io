@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="陈小胖的博客">
 <meta property="og:description" content="Promise： Promise出现之前，处理异步网络请求是这样的： 请求1(function(请求结果1)){请求2(function(请求结果2){ 处理请求结果2 })}，如果有很多个异步请求，就会出现回调地狱的痛点。  回调地狱的缺点：  代码臃肿 可读性差 可维护性差 代码复用性差 容易滋生bug 只能在回调里处理异常   Promise是异步编程的一种解决方案，比传统的异步解决方案（回">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-28T06:40:02.820Z">
+<meta property="og:updated_time" content="2018-06-28T07:24:24.398Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6">
 <meta name="twitter:description" content="Promise： Promise出现之前，处理异步网络请求是这样的： 请求1(function(请求结果1)){请求2(function(请求结果2){ 处理请求结果2 })}，如果有很多个异步请求，就会出现回调地狱的痛点。  回调地狱的缺点：  代码臃肿 可读性差 可维护性差 代码复用性差 容易滋生bug 只能在回调里处理异常   Promise是异步编程的一种解决方案，比传统的异步解决方案（回">
@@ -328,16 +328,52 @@
 <p>​    .then(请求2(请求结果1))</p>
 <p>​    .then(请求3(请求结果2))</p>
 <p>​    .catch(处理异常(异常信息))</p>
+<a id="more"></a>
 </li>
 <li><p><strong>同步与异步的区别：</strong>简单来说，可以改变程序正常执行顺序的操作就可以看成是异步操作，不用等所有操作都做完就可以响应用户请求，用户体验较好，而同步就是要等所有操作都做完，才能返回给用户结果，用户体验不好，就好比让保姆去超市买菜做饭再送饭然后送完饭之后打电话给我，那么打电话给我就是同步操作，其他的都是异步操作</p>
 </li>
 <li><p><strong>Promise的使用总结：</strong></p>
 <ol>
-<li>初始化一个Promise对象，可以通过两种方式创建，这两种方式都会返回一个Promise对象</li>
+<li><p>初始化一个Promise对象，可以通过两种方式创建，这两种方式都会返回一个Promise对象</p>
+<ol>
+<li>new Promise(fn)</li>
+<li>Promise.resolve(fn)</li>
+</ol>
+</li>
+<li><p>然后调用上一步返回的Promise对象的then方法，注册回调函数</p>
+<p>then中的回调函数可以有一个参数，也可以不带参数，如果then中的回调函数依赖上一步的返回结果，那么就要带上参数：</p>
+<p>new Promise( fn ).then( function( response ){ 处理response } )</p>
+</li>
+<li><p>最后注册一个catch函数，处理前面回调函数出现的异常</p>
+<p>new Promise( fn ).then( function( response ){ 处理response }).catch( function( error ){ 处理错误 })</p>
+</li>
 </ol>
 </li>
 </ol>
+<h3 id="let和const："><a href="#let和const：" class="headerlink" title="let和const："></a>let和const：</h3><p>let声明变量：</p>
+<ol>
+<li>申明一个变量的时候，不会在window下面有个属性，而var会在window下面有个属性</li>
+<li>暂存死区，不会预解析，所以必须先声明，再调用，否则会报错，而var不会报错，是undefined</li>
+<li>支持块级作用域</li>
+</ol>
+<p>const声明常量：</p>
+<ol>
+<li>没有预解析，所以必须先声明后调用，否则会报错</li>
+<li>声明的时候必须赋值，否则会报错</li>
+<li>在同一作用域里，不允许有同名常量，否则会报错</li>
+<li>声明并赋值后修改值会报错</li>
+</ol>
+<h3 id="解构赋值"><a href="#解构赋值" class="headerlink" title="解构赋值"></a>解构赋值</h3><h3 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h3><h3 id="set和map"><a href="#set和map" class="headerlink" title="set和map"></a>set和map</h3><h3 id="class类："><a href="#class类：" class="headerlink" title="class类："></a>class类：</h3><pre><code>class Person{
+    constructor( x,y ){
+        this.x = x;
+        thi.y = y;
+    }
 
+    toString(){
+        return &apos;(&apos; + this.x + &apos;,&apos; + this.y + &apos;)&apos;
+    }
+}
+</code></pre>
       
     </div>
     
@@ -491,7 +527,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Promise："><span class="nav-number">1.</span> <span class="nav-text">Promise：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Promise："><span class="nav-number">1.</span> <span class="nav-text">Promise：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#let和const："><span class="nav-number">2.</span> <span class="nav-text">let和const：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解构赋值"><span class="nav-number">3.</span> <span class="nav-text">解构赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板字符串"><span class="nav-number">4.</span> <span class="nav-text">模板字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#set和map"><span class="nav-number">5.</span> <span class="nav-text">set和map</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class类："><span class="nav-number">6.</span> <span class="nav-text">class类：</span></a></li></ol></div>
             
 
           </div>
