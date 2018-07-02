@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="陈小胖的博客">
 <meta property="og:description" content="定义：面向对象是一种编程思想，就是把一些具有相同特征的归为一类，并且返回一个对象，这个对象的特性是挂在构造函数的原型上面的。 特征：  抽象：抽出像的部分 封装：封函数，只能通过对象来访问方法 继承  构造函数：构造对象的函数，一个函数return出一个对象，那么这个函数就是构造函数 实例化对象：把构造函数return的对象用一个变量存起来，那么这个变量就是实例化对象 属性和方法：  前面无主的叫">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-28T07:24:53.873Z">
+<meta property="og:updated_time" content="2018-07-02T02:46:52.164Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面向对象">
 <meta name="twitter:description" content="定义：面向对象是一种编程思想，就是把一些具有相同特征的归为一类，并且返回一个对象，这个对象的特性是挂在构造函数的原型上面的。 特征：  抽象：抽出像的部分 封装：封函数，只能通过对象来访问方法 继承  构造函数：构造对象的函数，一个函数return出一个对象，那么这个函数就是构造函数 实例化对象：把构造函数return的对象用一个变量存起来，那么这个变量就是实例化对象 属性和方法：  前面无主的叫">
@@ -341,7 +341,15 @@
 <li>改写对象下面的属性和方法，让共用的属性或者方法在内存中只存一份（目的是为了解决实例化对象使用方法时性能的问题，提高性能）</li>
 <li>每个函数都自带一个属性或者方法，其中有一个属性：prototype</li>
 <li>prototype的值是一个对象</li>
-<li>prototype只能给该构造函数的实例化</li>
+<li>prototype只能给该构造函数的实例化对象使用</li>
+<li>js有一个特性，如果实例化对象上没有某个属性或者方法，那么他一定会去构造函数的原型上找这个属性或者方法</li>
+<li>构造函数：属性写在构造函数里，方法写在构造函数的原型上</li>
+</ol>
+<p><strong>原型链：</strong></p>
+<ol>
+<li>对象身上一定有原型链，一定没有原型</li>
+<li>原型链是构造函数原型与实例化对象之间的桥梁</li>
+<li>实例化对象的原型链等于构造函数的原型</li>
 </ol>
 
       
