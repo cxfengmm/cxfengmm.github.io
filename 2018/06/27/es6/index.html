@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="陈小胖的博客">
 <meta property="og:description" content="Promise： Promise出现之前，处理异步网络请求是这样的： 请求1(function(请求结果1)){请求2(function(请求结果2){ 处理请求结果2 })}，如果有很多个异步请求，就会出现回调地狱的痛点。  回调地狱的缺点：  代码臃肿 可读性差 可维护性差 代码复用性差 容易滋生bug 只能在回调里处理异常   Promise是异步编程的一种解决方案，比传统的异步解决方案（回">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-28T07:46:21.951Z">
+<meta property="og:updated_time" content="2018-07-05T08:05:36.098Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ES6">
 <meta name="twitter:description" content="Promise： Promise出现之前，处理异步网络请求是这样的： 请求1(function(请求结果1)){请求2(function(请求结果2){ 处理请求结果2 })}，如果有很多个异步请求，就会出现回调地狱的痛点。  回调地狱的缺点：  代码臃肿 可读性差 可维护性差 代码复用性差 容易滋生bug 只能在回调里处理异常   Promise是异步编程的一种解决方案，比传统的异步解决方案（回">
@@ -379,12 +379,8 @@ Person.prototype = {
     constructor(){}
     toString(){}
 }
-
-
-typeof Person     //function：类的数据类型就是函数
-Person === Person.prototype.constructor   //true：类本身就指向构造函数
-
-let p = new Person(1,2);
+</code></pre><p>​<br>    typeof Person     //function：类的数据类型就是函数<br>    Person === Person.prototype.constructor   //true：类本身就指向构造函数</p>
+<pre><code>let p = new Person(1,2);
 p.toString()  //&apos;12&apos;;
 </code></pre>
       
