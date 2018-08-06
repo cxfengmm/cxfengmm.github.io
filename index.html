@@ -721,14 +721,47 @@
       
         
           <h3 id="小程序主体部分文件："><a href="#小程序主体部分文件：" class="headerlink" title="小程序主体部分文件："></a>小程序主体部分文件：</h3><h3 id="主要文件作用："><a href="#主要文件作用：" class="headerlink" title="主要文件作用："></a>主要文件作用：</h3><ol>
-<li>app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置<ol>
+<li><p>app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置</p>
+<ol>
 <li>pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改</li>
 <li>window：用于设置小程序的状态栏、导航条、标题、窗口背景色。<strong>注意：</strong>backgroundColor 是下拉窗口的背景色不是整个页面的背景色，整个页面背景色可以在app.wxss里面设置page{background:’#fff’}</li>
 <li>tabBar：底部tab切换。<strong>注意：</strong>小程序只有首页才有tabBar，跳转到其他页面就没有了</li>
 </ol>
 </li>
-<li>app.js文件：小程序逻辑</li>
-<li>app.wxss：小程序公共样式表</li>
+<li><p>app.js文件：小程序逻辑， <strong>App() </strong> 函数用来注册一个小程序，接受一个object参数，指定小程序的生命周期函数和全局的数据</p>
+<p>App({</p>
+<p>​    onLaunch( options ) {</p>
+<p>​        console.log( options ); </p>
+<p>​        { </p>
+<p>​            path: ‘ 打开小程序的路径，就是app.json文件的pages数组中的第一项 ‘, </p>
+<p>​            query: {} ,   // 打开小程序的query</p>
+<p>​            scene: Number,   // 打开小程序的场景值</p>
+<p>​        }</p>
+<p>​        // 监听小程序初始化，当小程序初始化之后，会全局调用，只触发一次</p>
+<p>​    },</p>
+<p>​    onShow( options ) {</p>
+<p>​        console.log( options );</p>
+<p>​        // 监听小程序显示，当小程序启动或者从后台进入前台，会触发</p>
+<p>​    },</p>
+<p>​    onHide() {</p>
+<p>​        console.log();</p>
+<p>​        // 监听小程序隐藏，当小程序从前台进入后台，会触发</p>
+<p>​    },</p>
+<p>​    onError( error ){</p>
+<p>​        console.log(erroe);</p>
+<p>​        // 当小程序发生脚本错误，或者api调用失败的时候会触发</p>
+<p>​    },</p>
+<p>​    onPageNotFound(){</p>
+<p>​        // 当页面文件不存在的时候会触发</p>
+<p>​    }，</p>
+<p>​    glabalData:{</p>
+<p>​        name:’admin’</p>
+<p>​    }</p>
+<p>​    // globalData要想被其他页面使用，只需要在其他页获取一下小程序实例 getApp().globalData</p>
+<p>})</p>
+</li>
+<li><p>app.wxss：小程序公共样式表</p>
+</li>
 </ol>
           <!--noindex-->
           <div class="post-button text-center">
