@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="陈小胖的博客">
 <meta property="og:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置  pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-03T06:24:20.965Z">
+<meta property="og:updated_time" content="2018-08-06T07:32:49.936Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序">
 <meta name="twitter:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置  pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程">
@@ -360,9 +360,61 @@
 <li>json：页面配置（不是必须）</li>
 </ol>
 <p><strong>注意：</strong>四类文件必须相同名称</p>
-<h3 id="页面路由："><a href="#页面路由：" class="headerlink" title="页面路由："></a>页面路由：</h3><ol>
-<li>getCurrentPages() 函数用于获取当前页面栈的实例，与vue的当前路由this.$route差不多</li>
+<h3 id="注册页面："><a href="#注册页面：" class="headerlink" title="注册页面："></a>注册页面：</h3><p>Page ( object ) 函数用来注册一个页面，指定页面的初始数据、生命周期函数、事件处理函数，这个就是每个页面的js文件里的格式，相当于一个个vue组件页</p>
+<ol>
+<li>data：页面的初始数据</li>
+<li>onLoad：监听页面加载</li>
+<li>onShow：监听页面显示</li>
+<li>onReady：监听页面初次渲染完成</li>
+<li>onHide：监听页面隐藏</li>
+<li>onUnload：监听页面卸载</li>
+<li>onPullDownRefresh：监听用户下拉动作</li>
+<li>onReachBottom：页面上拉触底事件的处理函数</li>
+<li>onShareAppMessage：用户点击右上角转发</li>
+<li>onPageScroll：页面滚动触发事件的处理函数</li>
+<li>onTabItemTap：当前是 tab 页时，点击 tab 时触发</li>
 </ol>
+<p>Page({</p>
+<p>​    data:{</p>
+<p>​        message: ‘hello world’</p>
+<p>​    },</p>
+<p>​    onLoad(){</p>
+<p>​        // 监听页面加载，页面加载时触发，只调用一次</p>
+<p>​    },</p>
+<p>​    onShow(){</p>
+<p>​        // 监听页面显示，页面显示或切入前台的时候触发</p>
+<p>​    },</p>
+<p>​    onReady(){</p>
+<p>​        // 监听页面初次加载完成，只会触发一次</p>
+<p>​    },</p>
+<p>​    onHide(){</p>
+<p>​        // 监听页面隐藏，页面隐藏或切入后台时触发，如navigateTo或者底部tab切换到其他页面，小程序切入          后台</p>
+<p>​    },</p>
+<p>​    onUnload(){</p>
+<p>​        // 监听页面卸载，如redirectTo或者navigateBack到其他页面</p>
+<p>​    },</p>
+<p>​    onPullDownRefresh(){</p>
+<p>​        // 监听用户下拉刷新，需要在app.json的window选项中开启enablePullDownRefresh，可以通过 wx.startPullDownRefresh触发下拉刷新，用 wx.stopPullDownRefresh停止当前页面的下拉刷新</p>
+<p>​    },</p>
+<p>​    onReachBottom(){</p>
+<p>​        // 页面上拉触底事件的处理函数，可以在app.json的window选项中设置触发距离 onReachBottomDistance</p>
+<p>​    },</p>
+<p>​    onShareAppMessage(){</p>
+<p>​        // 用户点击右上角分享的处理函数</p>
+<p>​    },</p>
+<p>​    onPageScroll(){</p>
+<p>​        // 页面滚动触发的函数</p>
+<p>​    },</p>
+<p>​    onTabItemTap(){</p>
+<p>​        //当前时tab页，点击tab触发</p>
+<p>​    }</p>
+<p>})</p>
+<ol start="12">
+<li>修改数据的时候需要通过 this.setData( { key : value }, callback )，才能改变页面状态</li>
+</ol>
+<h3 id="页面路由："><a href="#页面路由：" class="headerlink" title="页面路由："></a>页面路由：</h3><p>getCurrentPages() 函数用于获取当前页面栈的实例，与vue的当前路由this.$route差不多</p>
+<h3 id="文件作用域："><a href="#文件作用域：" class="headerlink" title="文件作用域："></a>文件作用域：</h3><p>在每个页面的 js 文件中声明的变量和函数只能在当前文件中有效，不同的文件中可以声明相同名字的变量和函数，不会相互影响，通过全局函数 getApp() 可以获取全局的应用实例，如果需要全局的数据可以在 App() 里设置。getApp().globalData</p>
+<h3 id="模块化："><a href="#模块化：" class="headerlink" title="模块化："></a>模块化：</h3><p>把一些公用的代码抽离出来放到一个 js 文件里，通过 exports 或者 module.exports 将该文件暴露出去，使用的时候通过 require(‘相对路径’)，然后就可以调用 js 文件里的方法了，exports 是 module.exports 的引用，随意更改 exports 的指向会造成未知的错误，所以推荐使用 module.exports</p>
 <h3 id="WXML："><a href="#WXML：" class="headerlink" title="WXML："></a>WXML：</h3><ol>
 <li>每个小程序页面的数据都是来自对应 js 文件的Page({})中的data，内容绑定和<strong>属性绑定</strong>都是双花括号，关键字也需要在双花括号之内，可以在双花括号内进行简单的运算（三元运算、算数运算、逻辑判断、字符串运算等）</li>
 </ol>
@@ -533,7 +585,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序主体部分文件："><span class="nav-number">1.</span> <span class="nav-text">小程序主体部分文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要文件作用："><span class="nav-number">2.</span> <span class="nav-text">主要文件作用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序页面文件："><span class="nav-number">3.</span> <span class="nav-text">小程序页面文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面路由："><span class="nav-number">4.</span> <span class="nav-text">页面路由：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WXML："><span class="nav-number">5.</span> <span class="nav-text">WXML：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件："><span class="nav-number">6.</span> <span class="nav-text">自定义组件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件传数据："><span class="nav-number">7.</span> <span class="nav-text">自定义组件传数据：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序主体部分文件："><span class="nav-number">1.</span> <span class="nav-text">小程序主体部分文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要文件作用："><span class="nav-number">2.</span> <span class="nav-text">主要文件作用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序页面文件："><span class="nav-number">3.</span> <span class="nav-text">小程序页面文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注册页面："><span class="nav-number">4.</span> <span class="nav-text">注册页面：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面路由："><span class="nav-number">5.</span> <span class="nav-text">页面路由：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件作用域："><span class="nav-number">6.</span> <span class="nav-text">文件作用域：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模块化："><span class="nav-number">7.</span> <span class="nav-text">模块化：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WXML："><span class="nav-number">8.</span> <span class="nav-text">WXML：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件："><span class="nav-number">9.</span> <span class="nav-text">自定义组件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件传数据："><span class="nav-number">10.</span> <span class="nav-text">自定义组件传数据：</span></a></li></ol></div>
             
 
           </div>
