@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="陈小胖的博客">
 <meta property="og:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置  pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-09T02:37:54.144Z">
+<meta property="og:updated_time" content="2018-08-09T07:51:31.205Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序">
 <meta name="twitter:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置  pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程">
@@ -449,6 +449,14 @@
 <li>单位：rpx，建议开发小程序的时候用iphone6作为参考，因为1px = 2rpx</li>
 <li>样式导入：@import “相对路径”;</li>
 </ol>
+<h3 id="组件："><a href="#组件：" class="headerlink" title="组件："></a>组件：</h3><ol>
+<li><p>试图容器：</p>
+<p>view：hover-class指定按下去的样式类</p>
+</li>
+<li><p>可滚动视图容器：</p>
+<p>scroll-x:false</p>
+</li>
+</ol>
 <h3 id="WXML："><a href="#WXML：" class="headerlink" title="WXML："></a>WXML：</h3><ol>
 <li>每个小程序页面的数据都是来自对应 js 文件的Page({})中的data，内容绑定和<strong>属性绑定</strong>都是双花括号，关键字也需要在双花括号之内，可以在双花括号内进行简单的运算（三元运算、算数运算、逻辑判断、字符串运算等）</li>
 </ol>
@@ -619,7 +627,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序主体部分文件："><span class="nav-number">1.</span> <span class="nav-text">小程序主体部分文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要文件作用："><span class="nav-number">2.</span> <span class="nav-text">主要文件作用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序页面文件："><span class="nav-number">3.</span> <span class="nav-text">小程序页面文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注册页面："><span class="nav-number">4.</span> <span class="nav-text">注册页面：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面路由："><span class="nav-number">5.</span> <span class="nav-text">页面路由：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件作用域："><span class="nav-number">6.</span> <span class="nav-text">文件作用域：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模块化："><span class="nav-number">7.</span> <span class="nav-text">模块化：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指令："><span class="nav-number">8.</span> <span class="nav-text">指令：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样式："><span class="nav-number">9.</span> <span class="nav-text">样式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WXML："><span class="nav-number">10.</span> <span class="nav-text">WXML：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件："><span class="nav-number">11.</span> <span class="nav-text">自定义组件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件传数据："><span class="nav-number">12.</span> <span class="nav-text">自定义组件传数据：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序主体部分文件："><span class="nav-number">1.</span> <span class="nav-text">小程序主体部分文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主要文件作用："><span class="nav-number">2.</span> <span class="nav-text">主要文件作用：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小程序页面文件："><span class="nav-number">3.</span> <span class="nav-text">小程序页面文件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注册页面："><span class="nav-number">4.</span> <span class="nav-text">注册页面：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#页面路由："><span class="nav-number">5.</span> <span class="nav-text">页面路由：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文件作用域："><span class="nav-number">6.</span> <span class="nav-text">文件作用域：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模块化："><span class="nav-number">7.</span> <span class="nav-text">模块化：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指令："><span class="nav-number">8.</span> <span class="nav-text">指令：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样式："><span class="nav-number">9.</span> <span class="nav-text">样式：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#组件："><span class="nav-number">10.</span> <span class="nav-text">组件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WXML："><span class="nav-number">11.</span> <span class="nav-text">WXML：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件："><span class="nav-number">12.</span> <span class="nav-text">自定义组件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义组件传数据："><span class="nav-number">13.</span> <span class="nav-text">自定义组件传数据：</span></a></li></ol></div>
             
 
           </div>
