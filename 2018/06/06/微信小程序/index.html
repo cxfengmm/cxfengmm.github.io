@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="陈小胖的博客">
 <meta property="og:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置  pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-10T07:35:35.507Z">
+<meta property="og:updated_time" content="2018-08-13T02:55:38.173Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序">
 <meta name="twitter:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置  pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程">
@@ -450,13 +450,37 @@
 <li>样式导入：@import “相对路径”;</li>
 </ol>
 <h3 id="组件："><a href="#组件：" class="headerlink" title="组件："></a>组件：</h3><ol>
-<li><p>试图容器：</p>
-<p>view：hover-class指定按下去的样式类</p>
-</li>
-<li><p>可滚动视图容器：</p>
-<p>scroll-x:false</p>
-</li>
+<li>试图容器：view</li>
 </ol>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性名</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">hover-class</td>
+<td style="text-align:center">String</td>
+<td style="text-align:center">none</td>
+<td style="text-align:center">指定点击按下去得样式</td>
+</tr>
+<tr>
+<td style="text-align:center">hover-stop-propagation</td>
+<td style="text-align:center">Boolean</td>
+<td style="text-align:center">false</td>
+<td style="text-align:center">是否阻止本节点的祖先节点出现点击态</td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
 <h3 id="WXML："><a href="#WXML：" class="headerlink" title="WXML："></a>WXML：</h3><ol>
 <li>每个小程序页面的数据都是来自对应 js 文件的Page({})中的data，内容绑定和<strong>属性绑定</strong>都是双花括号，关键字也需要在双花括号之内，可以在双花括号内进行简单的运算（三元运算、算数运算、逻辑判断、字符串运算等）</li>
 </ol>
