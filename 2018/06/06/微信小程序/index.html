@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="陈小胖的博客">
 <meta property="og:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置  pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-13T02:55:38.173Z">
+<meta property="og:updated_time" content="2018-08-13T06:07:23.096Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信小程序">
 <meta name="twitter:description" content="小程序主体部分文件：主要文件作用： app.json文件：是对当前小程序的全局配置，包括小程序的所有页面路径（pages:[]）、window界面表现（window:{}）、底部tab（tabBar:{}）、设置网络超时时间（networkTimeout:{}）等配置  pages：数组的第一项代表小程序的初始页面。小程序中增加或者减少页面都需要对pages数组进行修改 window：用于设置小程">
@@ -450,7 +450,9 @@
 <li>样式导入：@import “相对路径”;</li>
 </ol>
 <h3 id="组件："><a href="#组件：" class="headerlink" title="组件："></a>组件：</h3><ol>
-<li>试图容器：view</li>
+<li><p>视图容器：</p>
+<p>view：视图容器</p>
+</li>
 </ol>
 <table>
 <thead>
@@ -474,6 +476,31 @@
 <td style="text-align:center">false</td>
 <td style="text-align:center">是否阻止本节点的祖先节点出现点击态</td>
 </tr>
+<tr>
+<td style="text-align:center">hover-start-time</td>
+<td style="text-align:center">Number</td>
+<td style="text-align:center">50</td>
+<td style="text-align:center">按住后多久出现点击态，单位毫秒</td>
+</tr>
+<tr>
+<td style="text-align:center">hover-stay-time</td>
+<td style="text-align:center">Number</td>
+<td style="text-align:center">400</td>
+<td style="text-align:center">手指松开后点击态保留时间</td>
+</tr>
+</tbody>
+</table>
+<p>​    scroll-view：可滚动试图区域</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">属性名</th>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">默认值</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
